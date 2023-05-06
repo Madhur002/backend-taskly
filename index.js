@@ -12,12 +12,7 @@ const app = express()
 const port = process.env.PORT || 5000
 app.use(express.json());
 
-const corsOptions = {
-  origin: 'https://taskly-backend.onrender.com'
-};
-
-app.use(cors(corsOptions));
-
+app.use(cors());
 // AVAILABLE ROUTES
 app.use('/api/auth', authRoutes);
 app.use('/api/todos', todosRoutes);
