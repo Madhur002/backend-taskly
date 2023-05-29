@@ -5,6 +5,8 @@ import todosRoutes from "./routes/todos.js";
 import cors from "cors";
 import dotenv from "dotenv";
 import Todos from "./models/Todos.js";
+import fetchuser from "./middleware/fetchuser.js";
+
 dotenv.config();
 
 connectToMongo();
